@@ -7,68 +7,71 @@ namespace Framework.Pages.LTG
     {
         public static void ArrivalDateButton1()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/div[5]/button[1]";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.arrivalButton1);
         }
 
         public static void ArrivalDateButton2()
         {
-            string locator = "/html/body/div[3]/div/div[2]/div/div/div/div[2]/div/div[2]/div[5]/div[5]";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.arrivalButton2);
         }
 
-        public static void ArrivalLocation(string valueArrivalLocation)
+        public static void ArrivalLocation1()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/div[3]/div/input";
-            Common.SendKeys(locator, valueArrivalLocation);
+            Common.ClickElement(Locators.LTGmain.arrivalLocation1);
+        }
+
+        public static void ArrivalLocation2()
+        {
+            Common.ClickElement(Locators.LTGmain.arrivalLocation2);
         }
 
         public static void CookieButtonClick()
         {
-            string locator = "/html/body/div[2]/div/div[2]/button[1]";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.cookieButton);
         }
 
         public static void DepartureDateButton1()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/div[4]/button";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.departureButton1);
         }
 
         public static void DepartureDateButton2()
         {
-            string locator = "/html/body/div[3]/div/div[2]/div/div/div/div[2]/div/div[2]/div[5]/div[1]";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.departureButton2);
+        }
+        public static void LeaveLocation1()
+        {
+            Common.ClickElement(Locators.LTGmain.leaveLocation1);
         }
 
-        public static void LeaveLocation(string valueLeaveLocation)
+        public static void LeaveLocation2()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/div[1]/div/input";
-            Common.SendKeys(locator, valueLeaveLocation);
+            Common.ClickElement(Locators.LTGmain.leaveLocation2);
         }
 
         public static void PassengerButton()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/div[6]/button";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.passengerButton);
         }
 
         public static void PassengerChooseButton()
         {
-            string locator = "/html/body/div[3]/div/div[2]/div/div/div[1]/div[1]/ul/li[2]/div[2]/button[2]";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.choosePassengerTypeButton);
         }
 
         public static void PassengerSubmitButton()
         {
-            string locator = "/html/body/div[3]/div/div[2]/button";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.submitPassenger);
         }
 
         public static void SearchButton()
         {
-            string locator = "//*[@id=\"turnit-search-container\"]/button";
-            Common.ClickElement(locator);
+            Common.ClickElement(Locators.LTGmain.clickSearch);
+        }
+
+        public static string SearchResultsOutput()
+        {
+            return Common.GetElementText(Locators.LTGmain.searchResultMessage);
         }
     }
 }

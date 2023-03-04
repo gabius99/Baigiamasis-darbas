@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using System;
 
 namespace Framework.Pages
 {
@@ -17,6 +18,11 @@ namespace Framework.Pages
         internal static void SendKeys(string locator, string keys)
         {
             GetElement(locator).SendKeys(keys);
+        }
+
+        internal static string GetElementText(string locator)
+        {
+            return GetElement(locator).Text;
         }
     }
 }

@@ -1,27 +1,28 @@
 ﻿using Framework;
 using Framework.Pages.LTG;
 using NUnit.Framework;
+using SeleniumTests.BaseTests;
 
 namespace SeleniumTests.LTG
 {
-    internal class LTGmainTests
+    internal class LTGmainTests : BaseTest
     {
         [SetUp]
-        public void Setup()
+        public void Open()
         {
-            Driver.SetupDriver();
             Driver.OpenUrl("https://ltglink.lt/");
         }
+
         [Test]
         public void CheckForTicketSearch()
         {
-
-            string valueLeaveLocation = "Vilnius";
-            string valueArrivalLocation = "Kaunas";
+            string expectedText = "Paieškos rezultatai";
 
             LTGmain.CookieButtonClick();
-            LTGmain.LeaveLocation(valueLeaveLocation);
-            LTGmain.ArrivalLocation(valueArrivalLocation);
+            LTGmain.LeaveLocation1();
+            LTGmain.LeaveLocation2();
+            LTGmain.ArrivalLocation1();
+            LTGmain.ArrivalLocation2();
             LTGmain.DepartureDateButton1();
             LTGmain.DepartureDateButton2();
             LTGmain.ArrivalDateButton1();
@@ -30,13 +31,8 @@ namespace SeleniumTests.LTG
             LTGmain.PassengerChooseButton();
             LTGmain.PassengerSubmitButton();
             LTGmain.SearchButton();
-        }
 
-        [TearDown]
-        public void Teardown()
-        {
-            Driver.QuitDriver();
+            Assert.AreEqual(expectedText, LTGmain.SearchResultsOutput());
         }
     }
-
 }
