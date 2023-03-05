@@ -53,6 +53,7 @@
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
     <Compile Include="Pages\LTG\Locators.cs" />
+    <Compile Include="Pages\LTG\LTGaccount.cs" />
     <Compile Include="Pages\LTG\LTGmain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

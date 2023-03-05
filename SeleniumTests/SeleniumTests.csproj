@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTests\BaseTest.cs" />
+    <Compile Include="LTG\LTGaccountTests.cs" />
     <Compile Include="LTG\LTGmainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
