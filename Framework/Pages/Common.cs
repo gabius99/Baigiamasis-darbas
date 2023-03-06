@@ -1,4 +1,7 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.Extensions;
+using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace Framework.Pages
@@ -23,6 +26,53 @@ namespace Framework.Pages
         internal static string GetElementText(string locator)
         {
             return GetElement(locator).Text;
+        }
+
+        internal static void ExecuteJavaScript(string script)
+        {
+            Driver.GetDriver().ExecuteJavaScript(script);
+        }
+
+        internal static void ScrollByPixels(int pixelsRight, int pixelsDown)
+        {
+            ExecuteJavaScript($"window.scrollBy({pixelsRight}, {pixelsDown})");
+        }
+
+        internal static void ScrollUntilElementIsClickable(string locator)
+        {
+            IWebElement element = GetElement(locator);
+
+            bool isClickable = false;
+            int maxTries = 10;
+            int currentTry = 0;
+
+            while (!isClickable)
+            {
+                try
+                {
+                    element.Click();
+                    isClickable = true;
+                }
+                catch (Exception exception)
+                {
+                    if (exception is ElementClickInterceptedException && currentTry < maxTries)
+                    {
+                        ExecuteJavaScript("window.scrollBy(0, 50)");
+                        currentTry++;
+                    }
+                    else
+                    {
+                        throw exception;
+                    }
+                }
+            }
+        }
+
+        internal static void WaitForElementToBeEnabled(string locator)
+        {
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
+            wait.Until(driver => driver.FindElement(By.XPath(locator)).Enabled);
+
         }
     }
 }

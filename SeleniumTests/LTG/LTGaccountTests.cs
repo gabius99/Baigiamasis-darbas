@@ -28,7 +28,7 @@ namespace SeleniumTests.LTG
             LTGaccount.ClickConfirmButton();
 
             
-            Assert.AreEqual(expectedText, LTGaccount.SignInResultOutput()); //?
+            Assert.AreEqual(expectedText, LTGaccount.SignInResultOutput());
         }
     }
 }

@@ -31,6 +31,7 @@ namespace Framework.Pages.LTG
 
         public static string SignInResultOutput()
         {
+            Common.WaitForElementToBeEnabled(Locators.LTGaccount.signInMessage);
             return Common.GetElementText(Locators.LTGaccount.signInMessage);
         }
 
