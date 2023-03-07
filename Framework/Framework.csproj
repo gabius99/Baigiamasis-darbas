@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
+    <Compile Include="Pages\LTG\Feedback.cs" />
     <Compile Include="Pages\LTG\Journeys.cs" />
     <Compile Include="Pages\LTG\Locators.cs" />
     <Compile Include="Pages\LTG\LTGaccount.cs" />
