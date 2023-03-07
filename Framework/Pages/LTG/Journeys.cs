@@ -21,15 +21,19 @@ namespace Framework.Pages.LTG
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueTransport);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueTransport);
             Common.ClickElement(Locators.Journeys.ContinueTransport);
+
         }
 
         public static void ClickContinueForSeatSelection()
         {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueSeats);
             Common.ClickElement(Locators.Journeys.ContinueSeats);
         }
 
         public static void ClickContinueToCheckout()
         {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueCheckout);
+            Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueCheckout);
             Common.ClickElement(Locators.Journeys.ContinueCheckout);
         }
 
