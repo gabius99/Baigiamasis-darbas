@@ -36,12 +36,12 @@ namespace Framework.Pages.LTG
         internal static class Journeys
         {
             internal static string CookieButton = "//*[@id=\"cookie_notice\"]/div[2]/button[1]/span";
-            internal static string LeaveClass = "//*[@class='results']/li[1]/div[3]/button[1]";
-            internal static string AddButton = "//*[@id=\"react-app\"]/div[2]/div/div[2]/div/button";
-            internal static string ArrivalClass = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div[2]/ul/li[4]/button[1]";
-            internal static string ContinueSeats = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div[2]/div/div[2]/div[2]/div[2]/button";
-            internal static string ContinueTransport = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div[2]/div/div[3]/button/span";
-            internal static string ContinueCheckout = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div[2]/div/div[2]/button";
+            internal static string LeaveClass = "//*[@class='results']/li[1]/button[1]";
+            internal static string AddButton = "//*[@class='result-footer']//button";
+            internal static string ArrivalClass = "//*[@class='results']/li[8]/button[2]";
+            internal static string ContinueSeats = "//*[@class='continue-to-checkout']/button";
+            internal static string ContinueTransport = "//*[@class='view view--public-transport-ticket']//button[1]";
+            internal static string ContinueCheckout = "//*[@class='continue-to-checkout']/button[1]";
             internal static string EmailBox = "//*[@id=\"Email-input\"]";
             internal static string NumberBox = "//*[@id=\"PhoneNumber\"]";
             internal static string CheckBoxButton = "//*[@id=\"terms\"]";
