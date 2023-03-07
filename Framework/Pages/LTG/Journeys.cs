@@ -6,6 +6,8 @@ namespace Framework.Pages.LTG
     {
         public static void ArrivalRouteAndClass()
         {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.ArrivalClass);
+            Common.ScrollUntilElementIsClickable(Locators.Journeys.ArrivalClass);
             Common.ClickElement(Locators.Journeys.ArrivalClass);
         }
 
@@ -16,6 +18,8 @@ namespace Framework.Pages.LTG
 
         public static void ClickContinueForPublicTransport()
         {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueTransport);
+            Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueTransport);
             Common.ClickElement(Locators.Journeys.ContinueTransport);
         }
 
