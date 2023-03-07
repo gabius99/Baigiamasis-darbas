@@ -64,8 +64,7 @@ namespace Framework.Pages.LTG
 
         public static void LeavingRouteAndClass()
         {
-            System.Threading.Thread.Sleep(4000);
-            //Common.WaitForElementToBeEnabled(Locators.Journeys.LeaveClass);
+            Common.WaitForElementToBeEnabled(Locators.Journeys.LeaveClass);
             Common.ClickElement(Locators.Journeys.LeaveClass);
         }
     }
