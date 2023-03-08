@@ -46,6 +46,7 @@ namespace Framework.Pages.LTG
             internal static string NumberBox = "//*[@id=\"PhoneNumber\"]";
             internal static string CheckBoxButton = "//*[@id=\"terms\"]";
             internal static string ReserveSeatButton = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div[2]/div[2]/div/section/div/div/div/button/span";
+            internal static string TitleText = "/html/body/div/main/div[2]/div/div[2]/div/header/div[1]/div[1]/div[1]/div[1]";
         }
 
         internal static class Feedback
