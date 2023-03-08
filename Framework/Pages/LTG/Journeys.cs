@@ -68,5 +68,11 @@ namespace Framework.Pages.LTG
             Common.WaitForElementToBeEnabled(Locators.Journeys.LeaveClass);
             Common.ClickElement(Locators.Journeys.LeaveClass);
         }
+
+        public static object PaymentPageTitle()
+        {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.TitleText);
+            return Common.GetElementText(Locators.Journeys.TitleText);
+        }
     }
 }
