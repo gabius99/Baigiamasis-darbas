@@ -74,5 +74,14 @@ namespace Framework.Pages
             wait.Until(driver => driver.FindElement(By.XPath(locator)).Enabled);
 
         }
+
+        internal static void LeftClickElement(string locator)
+        {
+            Actions actions = new Actions(Driver.GetDriver());
+            IWebElement element = GetElement(locator);
+
+            actions.Click(element);
+            actions.Perform();
+        }
     }
 }
