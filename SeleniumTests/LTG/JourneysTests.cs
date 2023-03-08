@@ -10,7 +10,7 @@ namespace SeleniumTests.LTG
         [SetUp]
         public void Open()
         {
-            Driver.OpenUrl("https://bilietas.ltglink.lt/journeys?oStop=17&dStop=16&oDate=2023-03-31&fareClasses=BONUS_SCHEME_GROUP.ADULT,1&dDate=2023-03-31");
+            Driver.OpenUrl("https://ltglink.lt/");
         }
 
         [Test]
