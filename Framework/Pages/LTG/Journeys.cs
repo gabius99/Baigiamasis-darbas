@@ -53,6 +53,8 @@ namespace Framework.Pages.LTG
 
         public static void InputEmail(string valueEmail)
         {
+            Common.WaitForElementToBeEnabled(Locators.Journeys.EmailBox);
+            Common.ScrollUntilElementIsClickable(Locators.Journeys.EmailBox);
             Common.SendKeys(Locators.Journeys.EmailBox, valueEmail);
         }
 
