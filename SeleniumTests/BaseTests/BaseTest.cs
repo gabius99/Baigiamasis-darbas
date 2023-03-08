@@ -10,10 +10,11 @@ namespace SeleniumTests.BaseTests
         {
             Driver.SetupDriver();
         }
-        //[TearDown]
-        //public void Teardown()
-        //{
-        //    Driver.QuitDriver();
-        //}
+        [TearDown]
+        public void Teardown()
+        {
+            Driver.TakeScreenShot();
+            Driver.QuitDriver();
+        }
     }
 }
