@@ -20,7 +20,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueTransport);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueTransport);
-            Common.ClickElement(Locators.Journeys.ContinueTransport);
 
         }
 
@@ -34,7 +33,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueCheckout);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueCheckout);
-            Common.ClickElement(Locators.Journeys.ContinueCheckout);
         }
 
         public static void ClickCookieButton()
