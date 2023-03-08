@@ -20,7 +20,20 @@ namespace SeleniumTests.LTG
             string valueNumber = "68462879";
             string expectedResults = "MOKĖTI IŠ BANKO SĄSKAITOS";
 
-            Journeys.ClickCookieButton();
+            LTGmain.CookieButtonClick();
+            LTGmain.LeaveLocation1();
+            LTGmain.LeaveLocation2();
+            LTGmain.ArrivalLocation1();
+            LTGmain.ArrivalLocation2();
+            LTGmain.DepartureDateButton1();
+            LTGmain.DepartureDateButton2();
+            LTGmain.ArrivalDateButton1();
+            LTGmain.ArrivalDateButton2();
+            LTGmain.PassengerButton();
+            LTGmain.PassengerChooseButton();
+            LTGmain.PassengerSubmitButton();
+            LTGmain.SearchButton();
+
             Journeys.LeavingRouteAndClass();
             Journeys.ClickAddToBooking();
             Journeys.ArrivalRouteAndClass();
