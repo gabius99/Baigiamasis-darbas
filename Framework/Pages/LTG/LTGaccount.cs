@@ -26,6 +26,7 @@ namespace Framework.Pages.LTG
 
         public static void PressSignInButton()
         {
+            Common.WaitForElementToBeEnabled(Locators.LTGaccount.SignInButton);
             Common.ClickElement(Locators.LTGaccount.SignInButton);
         }
 
