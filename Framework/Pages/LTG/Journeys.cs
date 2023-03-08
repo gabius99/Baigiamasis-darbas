@@ -42,7 +42,8 @@ namespace Framework.Pages.LTG
 
         public static void ClickOnCheckBox()
         {
-            Common.ClickElement(Locators.Journeys.CheckBoxButton);
+            Common.WaitForElementToBeEnabled(Locators.Journeys.CheckBoxButton);
+            Common.LeftClickElement(Locators.Journeys.CheckBoxButton);
         }
 
         public static void ClickReserveYourSeat()
