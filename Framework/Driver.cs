@@ -29,7 +29,7 @@ namespace Framework
             driver.Quit();
         }
 
-        public static void TakeScreenShot(string methodName)
+        public static string TakeScreenShot(string methodName)
         {
             string screenshotDirectoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}screenshots";
             string screenshotName = $"{methodName}-{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}.png";
@@ -39,6 +39,7 @@ namespace Framework
             Directory.CreateDirectory(screenshotDirectoryPath);
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
             screenshot.SaveAsFile(screenshotFilePath, ScreenshotImageFormat.Png);
+            return screenshotFilePath;
         }
     }
 }
