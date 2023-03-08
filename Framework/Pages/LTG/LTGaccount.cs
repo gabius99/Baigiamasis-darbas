@@ -38,6 +38,7 @@ namespace Framework.Pages.LTG
 
         public static void UserNameInput(string valueUserName)
         {
+            Common.WaitForElementToBeEnabled(Locators.LTGaccount.UserNameBox);
             Common.SendKeys(Locators.LTGaccount.UserNameBox, valueUserName);
         }
     }
