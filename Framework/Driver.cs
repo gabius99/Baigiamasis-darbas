@@ -29,10 +29,10 @@ namespace Framework
             driver.Quit();
         }
 
-        public static void TakeScreenShot()
+        public static void TakeScreenShot(string methodName)
         {
             string screenshotDirectoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}screenshots";
-            string screenshotName = $"screenshot-{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}.png";
+            string screenshotName = $"{methodName}-{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}.png";
 
             string screenshotFilePath = $"{screenshotDirectoryPath}\\{screenshotName}";
 
