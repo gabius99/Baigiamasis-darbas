@@ -7,12 +7,6 @@ namespace SeleniumTests.LTG
 {
     internal class FeedbackTests : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://ltglink.lt/");
-        }
-
         [Test]
         public void WriteAFeedback()
         {

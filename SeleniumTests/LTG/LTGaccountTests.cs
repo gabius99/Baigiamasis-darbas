@@ -7,12 +7,6 @@ namespace SeleniumTests.LTG
 {
     internal class LTGaccountTests : BaseTest
     {
-        [SetUp]
-        public void Open()
-        {
-            Driver.OpenUrl("https://ltglink.lt/");
-        }
-
         [Test]
         public void SignInForm()
         {
