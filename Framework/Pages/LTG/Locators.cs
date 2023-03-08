@@ -64,5 +64,13 @@ namespace Framework.Pages.LTG
             internal static string SendButton = "//button[text()='Siųsti']";
             internal static string OutPutMessageText = "//*[@class='max-width ']//*[@class='title']";
         }
+
+        internal static class AccountDashBoard
+        {
+            internal static string ButtonAccountDetails = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[1]/nav/ul/li[5]"; //*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[1]/nav/ul/li[5]/a/div
+            internal static string ButtonEditDetails = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[2]/div/div[2]/ul/li[1]"; 
+            internal static string PhoneNumber = "//*[@id=\"PhoneNumber-0\"]";
+            internal static string ButtonSave = "//*[@class='button-container']/button";
+        }
     }
 }
