@@ -25,7 +25,7 @@ namespace SeleniumTests.BaseTests
         [OneTimeTearDown]
         public void Teardown()
         {
-
+            
             Driver.QuitDriver();
         }
     }
