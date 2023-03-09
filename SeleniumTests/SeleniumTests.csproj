@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseTests\BaseTestSingleSession.cs" />
     <Compile Include="BaseTests\BaseTest.cs" />
+    <Compile Include="LTG\AccountDashBoardTests.cs" />
     <Compile Include="LTG\FeedbackTests.cs" />
-    <Compile Include="LTG\JourneysTests.cs" />
-    <Compile Include="LTG\LTGaccountTests.cs" />
     <Compile Include="LTG\LTGmainTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
