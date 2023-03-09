@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Framework.Pages.LTG
 {
@@ -27,6 +28,7 @@ namespace Framework.Pages.LTG
 
         public static void ClickSendButton()
         {
+            Thread.Sleep(1000);
             Common.ScrollUntilElementIsClickable(Locators.Feedback.SendButton);
             Common.ClickElement(Locators.Feedback.SendButton);
         }

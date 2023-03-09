@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Framework.Pages.LTG
 {
@@ -26,7 +27,7 @@ namespace Framework.Pages.LTG
 
         public static void PressSignInButton()
         {
-            Common.WaitForElementToBeEnabled(Locators.LTGaccount.SignInButton);
+            Thread.Sleep(2000);
             Common.ClickElement(Locators.LTGaccount.SignInButton);
         }
 

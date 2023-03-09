@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Framework.Pages.LTG
 {
@@ -12,7 +13,7 @@ namespace Framework.Pages.LTG
 
         public static void ClickEditDetails()
         {
-            Common.WaitForElementToBeInvisible(Locators.AccountDashBoard.Loader);
+            Thread.Sleep(2000);
             Common.ScrollUntilElementIsClickable(Locators.AccountDashBoard.ButtonEditDetails);
         }
 
