@@ -67,10 +67,12 @@ namespace Framework.Pages.LTG
 
         internal static class AccountDashBoard
         {
-            internal static string ButtonAccountDetails = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[1]/nav/ul/li[5]"; //*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[1]/nav/ul/li[5]/a/div
+            internal static string ButtonAccountDetails = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[1]/nav/ul/li[5]";
             internal static string ButtonEditDetails = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[2]/div/div[2]/ul/li[1]"; 
             internal static string PhoneNumber = "//*[@id=\"PhoneNumber-0\"]";
             internal static string ButtonSave = "//*[@class='button-container']/button";
+            internal static string Loader = "//*[@class='loader-container overlay-loader-container']";
+            internal static string UnsuccessNotification = "//*[@id=\"react-app\"]/div[2]/div/main/div[2]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[4]/div[2]/div";
         }
     }
 }
