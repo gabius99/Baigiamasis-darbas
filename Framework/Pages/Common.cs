@@ -83,5 +83,14 @@ namespace Framework.Pages
             actions.Click(element);
             actions.Perform();
         }
+
+        internal static void DoubleClickElement(string locator)
+        {
+            Actions actions = new Actions(Driver.GetDriver());
+            IWebElement element = GetElement(locator);
+
+            actions.DoubleClick(element);
+            actions.Perform();
+        }
     }
 }
