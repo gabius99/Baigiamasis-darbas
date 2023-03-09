@@ -12,15 +12,19 @@ namespace SeleniumTests.BaseTests
             Driver.SetupDriver();
             Driver.OpenUrl("https://ltglink.lt/");
         }
-
-        [OneTimeTearDown]
-        public void Teardown()
+        [TearDown]
+        public void TeardownScreenshot()
         {
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
             {
                 string fileName = Driver.TakeScreenShot(TestContext.CurrentContext.Test.MethodName);
                 TestContext.AddTestAttachment(fileName);
             }
+        }
+
+        [OneTimeTearDown]
+        public void Teardown()
+        {
 
             Driver.QuitDriver();
         }
