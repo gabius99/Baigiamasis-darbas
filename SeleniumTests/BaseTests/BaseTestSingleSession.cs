@@ -22,7 +22,7 @@ namespace SeleniumTests.BaseTests
                 TestContext.AddTestAttachment(fileName);
             }
 
-            //Driver.QuitDriver();
+            Driver.QuitDriver();
         }
     }
 }
