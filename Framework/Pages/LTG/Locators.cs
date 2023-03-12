@@ -49,11 +49,10 @@
 
         internal static class Feedback
         {
-            internal static string CookieButton = "/html/body/div[2]/div/div[2]/button[1]";
-            internal static string BurgerButton = "//*[@id='react-app']/div[1]/header/div/button";
-            internal static string InfoButton = "//*[@class='_content']//button[2]";
-            internal static string FeedbackButton = "//*[@class='menu-mobile-popup-content']/li[8]/div[1]";
-            internal static string FeedbackFormButton = "/html/body/div[12]/div/div/div[2]/ul/li[1]/a";
+            internal static string CookieButton = "//*[@class='cookie-notice__buttons']/button[1]";
+            internal static string CookiesModal = "//*[@class='gdpr__cookie-notice']";
+            internal static string ServicesAndInformationMenu = "//*[@class='header-menu']//button[2]";
+            internal static string FeedbackFormMenuOption = "//*[@class='_links-area']/li[8]/ul/li[1]";
             internal static string FirstNameBox = "//*[@class='inputs-wrapper']/div[1]//input";
             internal static string LastNameBox = "//*[@class='inputs-wrapper']/div[2]//input";
             internal static string EmailBox = "//*[@class='inputs-wrapper']/div[3]//input";

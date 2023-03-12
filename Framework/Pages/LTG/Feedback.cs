@@ -1,32 +1,34 @@
-﻿using System.Threading;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class Feedback
     {
         public static void ClickCookieButton()
         {
             Common.ClickElement(Locators.Feedback.CookieButton);
+            Common.WaitForElementToBeInvisible(Locators.Feedback.CookiesModal);
+            // Need this for stability
+            // For some reason we need to wait a bit after closing the cookies modal
+            // Otherwise header menu does not properly open
+            // There might be some script running after cookies are closed
+            System.Threading.Thread.Sleep(500);
         }
 
-        public static void ClickFeedbackButton()
+        public static void ClickFeedbackFormOption()
         {
-            Common.ClickElement(Locators.Feedback.FeedbackButton);
-        }
-
-        public static void ClickFeedbackFormButton()
-        {
-            Common.ClickElement(Locators.Feedback.FeedbackFormButton);
+            Common.WaitForElementToBeClickable(Locators.Feedback.FeedbackFormMenuOption);
+            Common.ClickElement(Locators.Feedback.FeedbackFormMenuOption);
         }
 
         public static void ClickInformationAndServices()
         {
-            Common.ClickElement(Locators.Feedback.InfoButton);
+            Common.WaitForElementToBeClickable(Locators.Feedback.ServicesAndInformationMenu);
+            Common.ClickElement(Locators.Feedback.ServicesAndInformationMenu);
+            // Wait for menu to fully expand
+            Common.WaitForElementToBeVisisble("//*[@class='menu-popdown anim-enter-done']");
         }
 
         public static void ClickSendButton()
         {
-            Thread.Sleep(1000);
             Common.ScrollUntilElementIsClickable(Locators.Feedback.SendButton);
             Common.ClickElement(Locators.Feedback.SendButton);
         }
@@ -60,11 +62,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Feedback.OutPutMessageText);
             return Common.GetElementText(Locators.Feedback.OutPutMessageText);
-        }
-
-        public static void PressHamburegerButton()
-        {
-            Common.ClickElement(Locators.Feedback.BurgerButton);
         }
     }
 }

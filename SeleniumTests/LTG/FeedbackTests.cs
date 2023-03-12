@@ -17,10 +17,8 @@ namespace SeleniumTests.LTG
             string expectedText = "Jūsų atsiliepimas išsiųstas!";
 
             Feedback.ClickCookieButton();
-            Feedback.PressHamburegerButton();
             Feedback.ClickInformationAndServices();
-            Feedback.ClickFeedbackButton();
-            Feedback.ClickFeedbackFormButton();
+            Feedback.ClickFeedbackFormOption();
             Feedback.InputFirstName(valueFirstName);
             Feedback.InputLastName(valueLastName);
             Feedback.InputEmail(valueEmail);
