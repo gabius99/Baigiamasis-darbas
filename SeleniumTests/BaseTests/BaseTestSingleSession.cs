@@ -1,4 +1,5 @@
 ﻿using Framework;
+using Framework.Pages.LTG;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 
@@ -11,7 +12,9 @@ namespace SeleniumTests.BaseTests
         {
             Driver.SetupDriver();
             Driver.OpenUrl("https://ltglink.lt/");
+            LTGmain.CloseCookies();
         }
+
         [TearDown]
         public void TeardownScreenshot()
         {

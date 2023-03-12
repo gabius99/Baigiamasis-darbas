@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class Journeys
     {
@@ -20,7 +18,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueTransport);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueTransport);
-
         }
 
         public static void ClickContinueForSeatSelection()
@@ -33,11 +30,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueCheckout);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueCheckout);
-        }
-
-        public static void ClickCookieButton()
-        {
-            Common.ClickElement(Locators.Journeys.CookieButton);
         }
 
         public static void ClickOnCheckBox()

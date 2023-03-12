@@ -1,5 +1,4 @@
-﻿using Framework;
-using Framework.Pages.LTG;
+﻿using Framework.Pages.LTG;
 using NUnit.Framework;
 using SeleniumTests.BaseTests;
 
@@ -12,7 +11,6 @@ namespace SeleniumTests.LTG
         {
             string expectedText = "Paieškos rezultatai";
 
-            LTGmain.CookieButtonClick();
             LTGmain.LeaveLocation1();
             LTGmain.LeaveLocation2();
             LTGmain.ArrivalLocation1();
@@ -28,7 +26,6 @@ namespace SeleniumTests.LTG
 
             Assert.AreEqual(expectedText, LTGmain.SearchResultsOutput());
         }
-
 
         [Test, Order(2)]
         public void ReservingSeatsDemo()

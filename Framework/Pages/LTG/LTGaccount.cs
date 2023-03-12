@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class LTGaccount
     {
@@ -10,25 +7,14 @@ namespace Framework.Pages.LTG
             Common.ClickElement(Locators.LTGaccount.ConfirmClick);
         }
 
-        public static void CookieButtonClick()
-        {
-            Common.ClickElement(Locators.LTGaccount.cookieButton);
-        }
-
         public static void PasswordInput(string valuePassword)
         {
             Common.SendKeys(Locators.LTGaccount.PasswordBox, valuePassword);
         }
 
-        public static void PressHamburegerButton()
+        public static void ClickMyAccount()
         {
-            Common.ClickElement(Locators.LTGaccount.BurgerButton);
-        }
-
-        public static void PressSignInButton()
-        {
-            Thread.Sleep(2000);
-            Common.ClickElement(Locators.LTGaccount.SignInButton);
+            Common.ClickElement(Locators.LTGaccount.MyAccountButton);
         }
 
         public static string SignInResultOutput()

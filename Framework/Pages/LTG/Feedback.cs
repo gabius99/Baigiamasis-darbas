@@ -1,34 +1,23 @@
-﻿using System;
-using System.Threading;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class Feedback
     {
-
-        public static void ClickCookieButton()
+        public static void ClickFeedbackFormOption()
         {
-            Common.ClickElement(Locators.Feedback.CookieButton);
-        }
-
-        public static void ClickFeedbackButton()
-        {
-            Common.ClickElement(Locators.Feedback.FeedbackButton);
-        }
-
-        public static void ClickFeedbackFormButton()
-        {
-            Common.ClickElement(Locators.Feedback.FeedbackFormButton);
+            Common.WaitForElementToBeClickable(Locators.Feedback.FeedbackFormMenuOption);
+            Common.ClickElement(Locators.Feedback.FeedbackFormMenuOption);
         }
 
         public static void ClickInformationAndServices()
         {
-            Common.ClickElement(Locators.Feedback.InfoButton);
+            Common.WaitForElementToBeClickable(Locators.Feedback.ServicesAndInformationMenu);
+            Common.ClickElement(Locators.Feedback.ServicesAndInformationMenu);
+            // Wait for menu to fully expand
+            Common.WaitForElementToBeVisisble("//*[@class='menu-popdown anim-enter-done']");
         }
 
         public static void ClickSendButton()
         {
-            Thread.Sleep(1000);
             Common.ScrollUntilElementIsClickable(Locators.Feedback.SendButton);
             Common.ClickElement(Locators.Feedback.SendButton);
         }
@@ -58,15 +47,10 @@ namespace Framework.Pages.LTG
             Common.SendKeys(Locators.Feedback.PhoneNumberBox, valuePhoneNumber);
         }
 
-        public static object OutputMessage()
+        public static string OutputMessage()
         {
             Common.WaitForElementToBeEnabled(Locators.Feedback.OutPutMessageText);
             return Common.GetElementText(Locators.Feedback.OutPutMessageText);
-        }
-
-        public static void PressHamburegerButton()
-        {
-            Common.ClickElement(Locators.Feedback.BurgerButton);
         }
     }
 }

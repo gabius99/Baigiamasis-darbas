@@ -1,5 +1,4 @@
-﻿using Framework;
-using Framework.Pages.LTG;
+﻿using Framework.Pages.LTG;
 using NUnit.Framework;
 using SeleniumTests.BaseTests;
 
@@ -17,11 +16,8 @@ namespace SeleniumTests.LTG
             string valueFeedback = "Test feedback";
             string expectedText = "Jūsų atsiliepimas išsiųstas!";
 
-            Feedback.ClickCookieButton();
-            Feedback.PressHamburegerButton();
             Feedback.ClickInformationAndServices();
-            Feedback.ClickFeedbackButton();
-            Feedback.ClickFeedbackFormButton();
+            Feedback.ClickFeedbackFormOption();
             Feedback.InputFirstName(valueFirstName);
             Feedback.InputLastName(valueLastName);
             Feedback.InputEmail(valueEmail);

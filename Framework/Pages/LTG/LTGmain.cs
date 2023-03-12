@@ -1,10 +1,18 @@
-﻿using OpenQA.Selenium;
-using System;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class LTGmain
     {
+        public static void CloseCookies()
+        {
+            Common.ClickElement(Locators.LTGmain.cookiesAccept);
+            Common.WaitForElementToBeInvisible(Locators.LTGmain.cookiesModal);
+            // Need this for stability
+            // For some reason we need to wait a bit after closing the cookies modal
+            // Otherwise header menu does not properly open
+            // There might be some script running after cookies are closed
+            System.Threading.Thread.Sleep(500);
+        }
+
         public static void ArrivalDateButton1()
         {
             Common.ClickElement(Locators.LTGmain.arrivalButton1);
@@ -25,11 +33,6 @@ namespace Framework.Pages.LTG
             Common.ClickElement(Locators.LTGmain.arrivalLocation2);
         }
 
-        public static void CookieButtonClick()
-        {
-            Common.ClickElement(Locators.LTGmain.cookieButton);
-        }
-
         public static void DepartureDateButton1()
         {
             Common.ClickElement(Locators.LTGmain.departureButton1);
@@ -39,6 +42,7 @@ namespace Framework.Pages.LTG
         {
             Common.ClickElement(Locators.LTGmain.departureButton2);
         }
+
         public static void LeaveLocation1()
         {
             Common.ClickElement(Locators.LTGmain.leaveLocation1);
