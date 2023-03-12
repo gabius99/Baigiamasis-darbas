@@ -42,6 +42,7 @@
         {
             Common.ClickElement(Locators.LTGmain.departureButton2);
         }
+
         public static void LeaveLocation1()
         {
             Common.ClickElement(Locators.LTGmain.leaveLocation1);

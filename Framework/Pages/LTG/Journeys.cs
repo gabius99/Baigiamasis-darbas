@@ -32,11 +32,6 @@
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueCheckout);
         }
 
-        public static void ClickCookieButton()
-        {
-            Common.ClickElement(Locators.Journeys.CookieButton);
-        }
-
         public static void ClickOnCheckBox()
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.CheckBoxButton);

@@ -9,19 +9,9 @@ namespace Framework.Pages.LTG
             Common.ClickElement(Locators.LTGaccount.ConfirmClick);
         }
 
-        public static void CookieButtonClick()
-        {
-            Common.ClickElement(Locators.LTGaccount.cookieButton);
-        }
-
         public static void PasswordInput(string valuePassword)
         {
             Common.SendKeys(Locators.LTGaccount.PasswordBox, valuePassword);
-        }
-
-        public static void PressHamburegerButton()
-        {
-            Common.ClickElement(Locators.LTGaccount.BurgerButton);
         }
 
         public static void ClickMyAccount()

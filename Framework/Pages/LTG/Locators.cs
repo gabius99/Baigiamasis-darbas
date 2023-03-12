@@ -23,18 +23,15 @@
 
         internal static class LTGaccount
         {
-            internal static string cookieButton = "/html/body/div[2]/div/div[2]/button[1]";
             internal static string MyAccountButton = "//*[contains(@class,'shared-header__account-area')]//button";
             internal static string UserNameBox = "//*[@id='username-input']";
             internal static string PasswordBox = "//*[@id='password-input']";
             internal static string ConfirmClick = "//*[@id='react-app']/div[2]/div/main/div[2]/div/form/button";
-            internal static string BurgerButton = "//*[@id='react-app']/div[1]/header/div/button";
             internal static string signInMessage = "//*[@id='react-app']//*[@class='title' and text()='Bilietai']";
         }
 
         internal static class Journeys
         {
-            internal static string CookieButton = "//*[@id='cookie_notice']/div[2]/button[1]/span";
             internal static string LeaveClass = "//*[@class='results']/li[1]/button[1]";
             internal static string AddButton = "//*[@class='result-footer']//button";
             internal static string ArrivalClass = "//*[@class='results']/li[8]/button[2]";
