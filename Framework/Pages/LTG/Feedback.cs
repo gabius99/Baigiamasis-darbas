@@ -47,7 +47,7 @@
             Common.SendKeys(Locators.Feedback.PhoneNumberBox, valuePhoneNumber);
         }
 
-        public static object OutputMessage()
+        public static string OutputMessage()
         {
             Common.WaitForElementToBeEnabled(Locators.Feedback.OutPutMessageText);
             return Common.GetElementText(Locators.Feedback.OutPutMessageText);

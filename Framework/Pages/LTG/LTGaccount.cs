@@ -1,6 +1,4 @@
-﻿using System.Threading;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class LTGaccount
     {
