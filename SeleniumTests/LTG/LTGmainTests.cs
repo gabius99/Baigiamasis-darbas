@@ -11,7 +11,6 @@ namespace SeleniumTests.LTG
         {
             string expectedText = "Paieškos rezultatai";
 
-            LTGmain.CookieButtonClick();
             LTGmain.LeaveLocation1();
             LTGmain.LeaveLocation2();
             LTGmain.ArrivalLocation1();

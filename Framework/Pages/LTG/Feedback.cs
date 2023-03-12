@@ -2,17 +2,6 @@
 {
     public class Feedback
     {
-        public static void ClickCookieButton()
-        {
-            Common.ClickElement(Locators.Feedback.CookieButton);
-            Common.WaitForElementToBeInvisible(Locators.Feedback.CookiesModal);
-            // Need this for stability
-            // For some reason we need to wait a bit after closing the cookies modal
-            // Otherwise header menu does not properly open
-            // There might be some script running after cookies are closed
-            System.Threading.Thread.Sleep(500);
-        }
-
         public static void ClickFeedbackFormOption()
         {
             Common.WaitForElementToBeClickable(Locators.Feedback.FeedbackFormMenuOption);

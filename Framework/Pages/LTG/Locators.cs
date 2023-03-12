@@ -4,7 +4,8 @@
     {
         internal static class LTGmain
         {
-            internal static string cookieButton = "/html/body/div[2]/div/div[2]/button[1]";
+            internal static string cookiesAccept = "//*[@class='cookie-notice__buttons']/button[1]";
+            internal static string cookiesModal = "//*[@class='gdpr__cookie-notice']";
             internal static string leaveLocation1 = "//*[@id='turnit-search-container']/div[1]/div/input";
             internal static string arrivalLocation1 = "//*[@id='turnit-search-container']/div[3]/div/input";
             internal static string departureButton1 = "//*[@id='turnit-search-container']/div[4]/div/button";
@@ -49,8 +50,7 @@
 
         internal static class Feedback
         {
-            internal static string CookieButton = "//*[@class='cookie-notice__buttons']/button[1]";
-            internal static string CookiesModal = "//*[@class='gdpr__cookie-notice']";
+
             internal static string ServicesAndInformationMenu = "//*[@class='header-menu']//button[2]";
             internal static string FeedbackFormMenuOption = "//*[@class='_links-area']/li[8]/ul/li[1]";
             internal static string FirstNameBox = "//*[@class='inputs-wrapper']/div[1]//input";
