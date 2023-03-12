@@ -24,10 +24,9 @@ namespace Framework.Pages.LTG
             Common.ClickElement(Locators.LTGaccount.BurgerButton);
         }
 
-        public static void PressSignInButton()
+        public static void ClickMyAccount()
         {
-            Thread.Sleep(2000);
-            Common.ClickElement(Locators.LTGaccount.SignInButton);
+            Common.ClickElement(Locators.LTGaccount.MyAccountButton);
         }
 
         public static string SignInResultOutput()

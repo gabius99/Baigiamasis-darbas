@@ -24,7 +24,7 @@
         internal static class LTGaccount
         {
             internal static string cookieButton = "/html/body/div[2]/div/div[2]/button[1]";
-            internal static string SignInButton = "/html/body/div[3]/div/div/div[2]/div/nav/a/button/span";
+            internal static string MyAccountButton = "//*[contains(@class,'shared-header__account-area')]//button";
             internal static string UserNameBox = "//*[@id='username-input']";
             internal static string PasswordBox = "//*[@id='password-input']";
             internal static string ConfirmClick = "//*[@id='react-app']/div[2]/div/main/div[2]/div/form/button";

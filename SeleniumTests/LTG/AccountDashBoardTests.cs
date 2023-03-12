@@ -13,8 +13,7 @@ namespace SeleniumTests.LTG
             string valuePassword = "Tester.123";
             string expectedText = "Bilietai";
 
-            LTGaccount.PressHamburegerButton();
-            LTGaccount.PressSignInButton();
+            LTGaccount.ClickMyAccount();
             LTGaccount.UserNameInput(valueUserName);
             LTGaccount.PasswordInput(valuePassword);
             LTGaccount.ClickConfirmButton();
