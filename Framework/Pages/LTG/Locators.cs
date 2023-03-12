@@ -1,6 +1,4 @@
-﻿using Microsoft.SqlServer.Server;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     internal class Locators
     {

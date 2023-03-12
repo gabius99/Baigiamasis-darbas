@@ -1,5 +1,4 @@
-﻿using Framework;
-using Framework.Pages.LTG;
+﻿using Framework.Pages.LTG;
 using NUnit.Framework;
 using SeleniumTests.BaseTests;
 

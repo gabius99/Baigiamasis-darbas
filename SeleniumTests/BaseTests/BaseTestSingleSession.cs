@@ -12,6 +12,7 @@ namespace SeleniumTests.BaseTests
             Driver.SetupDriver();
             Driver.OpenUrl("https://ltglink.lt/");
         }
+
         [TearDown]
         public void TeardownScreenshot()
         {

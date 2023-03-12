@@ -1,5 +1,4 @@
-﻿using Framework;
-using Framework.Pages.LTG;
+﻿using Framework.Pages.LTG;
 using NUnit.Framework;
 using SeleniumTests.BaseTests;
 
@@ -21,14 +20,12 @@ namespace SeleniumTests.LTG
             LTGaccount.PasswordInput(valuePassword);
             LTGaccount.ClickConfirmButton();
 
-
             Assert.AreEqual(expectedText, LTGaccount.SignInResultOutput());
         }
 
         [Test, Order(2)]
         public void EditingPhoneNumberToValidAndInvalidForm()
         {
-            
             string valueValidPhoneNumber = "68416087";
             string valueInvalidPhoneNumber = "Invalid";
             string expectedText = "Telefono numeryje galimi tik skaičiai, tarpai ir - arba + simboliai.";

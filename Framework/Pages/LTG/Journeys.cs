@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class Journeys
     {
@@ -20,7 +18,6 @@ namespace Framework.Pages.LTG
         {
             Common.WaitForElementToBeEnabled(Locators.Journeys.ContinueTransport);
             Common.ScrollUntilElementIsClickable(Locators.Journeys.ContinueTransport);
-
         }
 
         public static void ClickContinueForSeatSelection()

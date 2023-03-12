@@ -73,7 +73,6 @@ namespace Framework.Pages
         {
             WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until(driver => driver.FindElement(By.XPath(locator)).Enabled);
-
         }
 
         internal static void LeftClickElement(string locator)

@@ -1,7 +1,6 @@
 ﻿using Framework;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal.Execution;
 
 namespace SeleniumTests.BaseTests
 {
@@ -13,6 +12,7 @@ namespace SeleniumTests.BaseTests
             Driver.SetupDriver();
             Driver.OpenUrl("https://ltglink.lt/");
         }
+
         [TearDown]
         public void Teardown()
         {

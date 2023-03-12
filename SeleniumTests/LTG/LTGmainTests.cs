@@ -1,5 +1,4 @@
-﻿using Framework;
-using Framework.Pages.LTG;
+﻿using Framework.Pages.LTG;
 using NUnit.Framework;
 using SeleniumTests.BaseTests;
 
@@ -28,7 +27,6 @@ namespace SeleniumTests.LTG
 
             Assert.AreEqual(expectedText, LTGmain.SearchResultsOutput());
         }
-
 
         [Test, Order(2)]
         public void ReservingSeatsDemo()

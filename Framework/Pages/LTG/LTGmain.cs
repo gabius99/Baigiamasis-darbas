@@ -1,7 +1,4 @@
-﻿using OpenQA.Selenium;
-using System;
-
-namespace Framework.Pages.LTG
+﻿namespace Framework.Pages.LTG
 {
     public class LTGmain
     {

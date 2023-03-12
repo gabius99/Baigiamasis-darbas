@@ -1,11 +1,9 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 
 namespace Framework.Pages.LTG
 {
     public class Feedback
     {
-
         public static void ClickCookieButton()
         {
             Common.ClickElement(Locators.Feedback.CookieButton);
